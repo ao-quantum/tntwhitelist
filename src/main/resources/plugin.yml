@@ -1,0 +1,26 @@
+name: TNTWhitelist
+version: '1.0-SNAPSHOT'
+main: xyz.qntum.TNTWhitelist.TNTWhitelist
+api-version: '1.21'
+commands:
+    tntwl:
+        description: List the players in the TNT whitelist
+        permission: tntwhitelist.command.tntwl
+        permission-message: You do not have permission to use this command
+        usage: /tntwl
+    tntwladd:
+        description: Add a player to the TNT whitelist
+        permission: tntwhitelist.command.tntadd
+        permission-message: You do not have permission to use this command
+        usage: /tntwladd <player>
+    tntwlremove:
+        description: Remove a player from the TNT whitelist
+        permission: tntwhitelist.command.tntremove
+        permission-message: You do not have permission to use this command
+        usage: /tntwlremove <player>
+        aliases:
+            - tntwlrm
+permissions:
+    tntwhitelist.command.tntwl:
+        description: Allows the player to list the players in the TNT whitelist
+        default: true
