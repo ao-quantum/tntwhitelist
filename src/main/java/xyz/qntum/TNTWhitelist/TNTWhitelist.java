@@ -16,13 +16,6 @@ public final class TNTWhitelist extends JavaPlugin {
     public HashSet<String> whitelist;
     private File whitelistFile;
 
-    /**
-     * TODO:
-     * - Stop block place events for non whitelists
-     * - Stop ignition events for non whitelists
-     * - Stop explosion events for non whitelist triggered
-     */
-
     @Override
     public void onEnable() {
         getLogger().info("Loading TNTWhitelist");
